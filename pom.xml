@@ -11,7 +11,7 @@
 	<groupId>io.buildpacks.example</groupId>
 	<artifactId>sample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging> <!-- add war packaging -->
+	<!-- add war packaging -->
 	<name>sample</name>
 	<description>Sample Java Application</description>
 
@@ -43,19 +43,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<!-- add war plugin -->
-			<plugin>
-    <artifactId>maven-war-plugin</artifactId>
-    <configuration>
-        <attachClasses>true</attachClasses>
-        <webXml>target/web.xml</webXml>
-        <webResources>
-            <resource>
-                <directory>src/main/webapp</directory>
-                <filtering>true</filtering>
-            </resource>
-        </webResources>
-    </configuration>
-</plugin>
+			
 		</plugins>
 	</build>
 
